@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MecanicApp.Registro">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+              
+
+
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+
+            </Grid.RowDefinitions>
+            <StackLayout>
+                
+            </StackLayout>
+            <Entry Grid.Column="0" Grid.Row="1" Placeholder="&#xE81D; USUARIO" VerticalOptions="CenterAndExpand" FontFamily="fontello"  />
+
+            <Entry Grid.Column="0" Grid.Row="2" Placeholder="&#xE8CD; CORREO" Keyboard="Email" VerticalOptions="CenterAndExpand" FontFamily="fontello"  />
+            <Entry Grid.Column="0" Grid.Row="3" Placeholder="&#xE800; CONTRASEÑA" IsPassword="True" VerticalOptions="CenterAndExpand" FontFamily="fontello"  />
+
+
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

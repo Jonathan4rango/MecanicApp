@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sh="clr-namespace:Sharpnado.Shades;assembly=Sharpnado.shadows" xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             x:Class="MecanicApp.LoginGrid"
+            >
+   
+    <ContentPage.Content>
+        <Grid BindingContext="{Binding ousuarioCLS}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="40" />
+            </Grid.RowDefinitions>
+            <StackLayout HorizontalOptions="CenterAndExpand" Grid.Column="0" Grid.Row="0">
+                <Image  Margin="0,120,0,10" HeightRequest="90" WidthRequest="90" Source="mecanico.png"/>
+                <Label FontSize="16" FontFamily="Arial" HorizontalOptions="Center" Text="Mecanica"></Label>
+            </StackLayout>
+            
+            <StackLayout Grid.Column="0" Grid.Row="1">
+
+                <Entry Margin="30,100,30,10"  HeightRequest="40" BackgroundColor="#F2F3F4"
+                       Text="{Binding nombre}"
+                       Placeholder="USUARIO" x:Name="txtNombre"  />
+
+
+                <Entry   Margin="30,0"  HeightRequest="40" BackgroundColor="#F2F3F4" 
+                         Text="{Binding contrasena}"
+                         Placeholder="CONTRASEÑA" IsPassword="True" x:Name="txtpass" />
+
+            </StackLayout>
+
+            <StackLayout Grid.Column="0" Grid.Row="2">
+
+                <sh:Shadows Shades="{sh:SingleShade Offset='0,0', Opacity=0.8,Color=Black, BlurRadius=12}">
+                    <Button  Text="INGRESAR" 
+                            x:Name="btn_registrer" Clicked="btn_registrer_Clicked" />
+                </sh:Shadows>
+
+            </StackLayout >
+
+            <StackLayout Grid.Column="0" Grid.Row="3" Orientation="Horizontal" HorizontalOptions="Center" >
+                
+                <Button CornerRadius="20" WidthRequest="100" HeightRequest="100" Margin="20, 40, 0, 50"  Text="" />
+                <Button CornerRadius="20" WidthRequest="100" HeightRequest="100" Margin="10, 40, 0 ,50 "  Text="" />
+                <Button CornerRadius="20" WidthRequest="100" HeightRequest="100" Margin="10, 40, 20, 50 "  Text="" />
+            </StackLayout>
+            <Button Grid.Column="0" Grid.Row="4" Text="¿No tienes cuenta? Registrate aquí!"
+                     Background="Transparent" x:Name="lbRegistro" Clicked="lbRegistro_Clicked"/>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

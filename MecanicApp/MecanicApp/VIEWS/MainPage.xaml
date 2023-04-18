@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sh="clr-namespace:Sharpnado.Shades;assembly=Sharpnado.shadows"
+
+             x:Class="MecanicApp.MainPage">
+
+    <StackLayout>
+        <StackLayout HorizontalOptions="CenterAndExpand">
+            <Image  Margin="0,120,0,10" HeightRequest="90" WidthRequest="90" Source="mecanico.png"/>
+            <Label FontSize="16" FontFamily="Arial" HorizontalOptions="Center" Text="Mecanica"></Label>
+        </StackLayout>
+        <StackLayout>
+
+            <Entry Margin="30,50,30,10"  HeightRequest="40" BackgroundColor="#F2F3F4" Placeholder="USUARIO"  />
+          
+     
+            <Entry   Margin="30,0"  HeightRequest="40" BackgroundColor="#F2F3F4" Placeholder="CONTRASEÑA"  />
+         
+        </StackLayout>
+        <StackLayout>
+
+            <sh:Shadows CornerRadius="30" Shades="{sh:SingleShade Offset='0,0', Opacity=0.8,Color=Black, BlurRadius=12}">
+                <Button Margin="40,20,40,10" BackgroundColor="#22B53A" CornerRadius="8"  Text="INGRESAR"  BorderColor="Gray" />
+            </sh:Shadows>
+
+        </StackLayout>
+        <StackLayout>
+
+        </StackLayout>
+        <StackLayout>
+
+        </StackLayout>
+        <StackLayout>
+
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

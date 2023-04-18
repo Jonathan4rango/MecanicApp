@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MecanicApp.Style">
+
+
+    <Color x:Key="Primary">#2C2891</Color>
+    <Color x:Key="Secondary">#39A388</Color>
+    <Color x:Key="Boton">#1C7947</Color>
+    <Color x:Key="Panel">#FFFD95</Color>
+
+
+
+</ResourceDictionary>
